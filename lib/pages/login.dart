@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:win_shop/pages/forgot_password.dart';
-import 'package:win_shop/pages/home.dart';
+import 'package:win_shop/pages/home/presentation/home.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -104,7 +104,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () => Navigator.push(
+                    onPressed: () => Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
                         builder: (context) => HomePage(),
